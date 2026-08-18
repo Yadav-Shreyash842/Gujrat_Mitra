@@ -1,0 +1,17 @@
+# Root-level workspace junk (only react-app/ and server/ are pushed)
+/css/
+/images/
+/index.html
+/react-app.zip
+
+# Node
+node_modules/
+dist/
+*.log
+buildlog.txt
+devserver.log
+*.local
+
+# Environment / secrets
+server/.env
+.env

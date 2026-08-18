@@ -1,0 +1,233 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  line-height: normal;
+  font-family: "Times New Roman";
+}
+
+body {
+  margin: 0;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+.home-nav {
+  position: relative;
+  z-index: 1;
+}
+
+.home-nav::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -14px;
+  
+  width: 28px;
+  height: 100%;
+  background: #fef5dc;
+  border-radius: 0 14px 14px 0;
+  transform: skewX(-18deg);
+  transform-origin: left center;
+  z-index: 1;
+}
+
+@media (min-width: 1024px) {
+  body {
+    margin: 0;
+  }
+}
+
+@media (max-width: 1023px) {
+  html,
+  body {
+    overflow-x: clip;
+  }
+
+  .mobile-cat-nav {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .mobile-cat-nav::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* --- Font scale multiplier (used by desktop overrides) --- */
+html[data-font-scale] { --gm-s: 1; }
+html[data-font-scale="80"] { --gm-s: 0.8; }
+html[data-font-scale="90"] { --gm-s: 0.9; }
+html[data-font-scale="110"] { --gm-s: 1.1; }
+html[data-font-scale="120"] { --gm-s: 1.2; }
+html[data-font-scale="130"] { --gm-s: 1.3; }
+
+/* --- Font scale: mobile / tablet <1024px (uniform zoom, wraps naturally) --- */
+@media (max-width: 1023px) {
+  html[data-font-scale="80"] { zoom: 0.8; }
+  html[data-font-scale="90"] { zoom: 0.9; }
+  html[data-font-scale="110"] { zoom: 1.1; }
+  html[data-font-scale="120"] { zoom: 1.2; }
+  html[data-font-scale="130"] { zoom: 1.3; }
+}
+
+/* --- Font scale: desktop >=1024px (scale fluid reading text only, keep fixed layout) --- */
+@media (min-width: 1024px) {
+  html[data-font-scale] .article-page h1 { font-size: calc(36px * var(--gm-s)) !important; }
+  html[data-font-scale] .article-page .article-meta,
+  html[data-font-scale] .article-page .article-meta span { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .article-page .category-badge { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .article-body p { font-size: calc(20px * var(--gm-s)) !important; }
+  html[data-font-scale] .article-body h2 { font-size: calc(28px * var(--gm-s)) !important; }
+  html[data-font-scale] .article-page .related-items h3 { font-size: calc(22px * var(--gm-s)) !important; }
+  html[data-font-scale] .article-page .related-items span { font-size: calc(12px * var(--gm-s)) !important; }
+  html[data-font-scale] .comments-area h3 { font-size: calc(22px * var(--gm-s)) !important; }
+  html[data-font-scale] .comments-area textarea { font-size: calc(15px * var(--gm-s)) !important; }
+  html[data-font-scale] .comments-area button { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .comments-area .comment-author { font-size: calc(13px * var(--gm-s)) !important; }
+  html[data-font-scale] .comments-area .comment-time { font-size: calc(12px * var(--gm-s)) !important; }
+  html[data-font-scale] .comments-area .comment-text { font-size: calc(15px * var(--gm-s)) !important; }
+  html[data-font-scale] .comments-area .comment-empty { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .article-page .action-bar button { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .category-page .category-title { font-size: calc(28px * var(--gm-s)) !important; }
+  html[data-font-scale] .category-page .category-card-title { font-size: calc(22px * var(--gm-s)) !important; }
+  html[data-font-scale] .category-page .category-card-meta { font-size: calc(11px * var(--gm-s)) !important; }
+  html[data-font-scale] .category-page .category-empty { font-size: calc(16px * var(--gm-s)) !important; }
+  html[data-font-scale] .video-page h1 { font-size: calc(36px * var(--gm-s)) !important; }
+  html[data-font-scale] .video-page .category-badge { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .video-page .video-meta,
+  html[data-font-scale] .video-page .video-meta span { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .video-page .video-description { font-size: calc(16px * var(--gm-s)) !important; }
+  html[data-font-scale] .video-page .action-bar button { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .video-page .video-related-heading { font-size: calc(22px * var(--gm-s)) !important; }
+  html[data-font-scale] .video-page .video-card-title { font-size: calc(22px * var(--gm-s)) !important; }
+  html[data-font-scale] .video-page .video-card-meta { font-size: calc(18px * var(--gm-s)) !important; }
+  html[data-font-scale] .video-page .video-not-found { font-size: calc(16px * var(--gm-s)) !important; }
+  html[data-font-scale] .epaper-page .epaper-title { font-size: calc(28px * var(--gm-s)) !important; }
+  html[data-font-scale] .epaper-page .epaper-section-label { font-size: calc(17px * var(--gm-s)) !important; }
+  html[data-font-scale] .epaper-page .epaper-edition-name { font-size: calc(32px * var(--gm-s)) !important; }
+  html[data-font-scale] .epaper-page .epaper-edition-date { font-size: calc(15px * var(--gm-s)) !important; }
+  html[data-font-scale] .epaper-page .epaper-open-btn { font-size: calc(16px * var(--gm-s)) !important; }
+  html[data-font-scale] .epaper-page .epaper-unavailable { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .epaper-page .epaper-edition-card .epaper-edition-name { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .auth-page .auth-title { font-size: calc(30px * var(--gm-s)) !important; }
+  html[data-font-scale] .auth-page .auth-subtitle,
+  html[data-font-scale] .auth-page .auth-switch { font-size: calc(15px * var(--gm-s)) !important; }
+  html[data-font-scale] .auth-page .auth-error,
+  html[data-font-scale] .auth-page .auth-link,
+  html[data-font-scale] .auth-page .auth-or { font-size: calc(13px * var(--gm-s)) !important; }
+  html[data-font-scale] .auth-page .auth-btn { font-size: calc(16px * var(--gm-s)) !important; }
+  html[data-font-scale] .auth-page .auth-demo { font-size: calc(13px * var(--gm-s)) !important; }
+  html[data-font-scale] .profile-page .profile-title { font-size: calc(28px * var(--gm-s)) !important; }
+  html[data-font-scale] .profile-page .profile-section-label { font-size: calc(17px * var(--gm-s)) !important; }
+  html[data-font-scale] .profile-page .profile-label { font-size: calc(13px * var(--gm-s)) !important; }
+  html[data-font-scale] .profile-page .profile-value { font-size: calc(15px * var(--gm-s)) !important; }
+  html[data-font-scale] .profile-page .profile-btn { font-size: calc(13px * var(--gm-s)) !important; }
+  html[data-font-scale] .profile-page .profile-input { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-title { font-size: calc(28px * var(--gm-s)) !important; }
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-date,
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-city-label { font-size: calc(15px * var(--gm-s)) !important; }
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-city-select { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-section-label { font-size: calc(17px * var(--gm-s)) !important; }
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-sky-label { font-size: calc(13px * var(--gm-s)) !important; }
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-sky-value { font-size: calc(20px * var(--gm-s)) !important; }
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-panchang-label { font-size: calc(12px * var(--gm-s)) !important; }
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-panchang-value { font-size: calc(16px * var(--gm-s)) !important; }
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-chogh-btn { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-chogh-time,
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-chogh-name { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-jain-name,
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-jain-time { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-rashi-name { font-size: calc(13px * var(--gm-s)) !important; }
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-rashi-tip { font-size: calc(15px * var(--gm-s)) !important; }
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-breadcrumb { font-size: calc(13px * var(--gm-s)) !important; }
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-date-summary-date { font-size: calc(28px * var(--gm-s)) !important; }
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-date-summary-weekday,
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-summary-chip-label,
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-summary-chip-value,
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-shubh-badge,
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-view-link,
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-date-today-btn { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-date-nav-btn { font-size: calc(18px * var(--gm-s)) !important; }
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-chogh-panel-title,
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-sidebar-title { font-size: calc(16px * var(--gm-s)) !important; }
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-sidebar-row-label,
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-sidebar-row-value,
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-festival-note,
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-upcoming-name,
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-upcoming-date { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .aapni-aaj-page .aapni-aaj-festival-name { font-size: calc(18px * var(--gm-s)) !important; }
+  html[data-font-scale] .market-page .market-title { font-size: calc(28px * var(--gm-s)) !important; }
+  html[data-font-scale] .market-page .market-name { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .market-page .market-value { font-size: calc(22px * var(--gm-s)) !important; }
+  html[data-font-scale] .market-page .market-change { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .market-page .market-static-note { font-size: calc(13px * var(--gm-s)) !important; }
+  html[data-font-scale] .market-page .market-subtitle { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .market-page .market-card-title { font-size: calc(28px * var(--gm-s)) !important; }
+  html[data-font-scale] .market-page .market-ticker-name { font-size: calc(13px * var(--gm-s)) !important; }
+  html[data-font-scale] .market-page .market-ticker-value { font-size: calc(16px * var(--gm-s)) !important; }
+  html[data-font-scale] .market-page .market-ticker-change { font-size: calc(13px * var(--gm-s)) !important; }
+  html[data-font-scale] .market-page .market-trend-value { font-size: calc(34px * var(--gm-s)) !important; }
+  html[data-font-scale] .market-page .market-trend-change { font-size: calc(15px * var(--gm-s)) !important; }
+  html[data-font-scale] .market-page .market-tf-btn { font-size: calc(13px * var(--gm-s)) !important; }
+  html[data-font-scale] .market-page .market-stat-label { font-size: calc(12px * var(--gm-s)) !important; }
+  html[data-font-scale] .market-page .market-stat-value { font-size: calc(16px * var(--gm-s)) !important; }
+  html[data-font-scale] .market-page .market-gl-name { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .market-page .market-gl-price { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .market-page .market-gl-change { font-size: calc(13px * var(--gm-s)) !important; }
+  html[data-font-scale] .market-page .market-breadth-net { font-size: calc(26px * var(--gm-s)) !important; }
+  html[data-font-scale] .market-page .market-breadth-net-label { font-size: calc(11px * var(--gm-s)) !important; }
+  html[data-font-scale] .market-page .market-breadth-count { font-size: calc(15px * var(--gm-s)) !important; }
+  html[data-font-scale] .market-page .market-sentiment { font-size: calc(11px * var(--gm-s)) !important; }
+  html[data-font-scale] .market-page .market-sector-name { font-size: calc(13px * var(--gm-s)) !important; }
+  html[data-font-scale] .market-page .market-sector-change { font-size: calc(13px * var(--gm-s)) !important; }
+  html[data-font-scale] .market-page .market-update-text { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .market-page .market-update-time { font-size: calc(12px * var(--gm-s)) !important; }
+  html[data-font-scale] .market-page .market-disclaimer-note,
+  html[data-font-scale] .market-page .market-disclaimer-update,
+  html[data-font-scale] .market-page .market-disclaimer-source { font-size: calc(13px * var(--gm-s)) !important; }
+  html[data-font-scale] .sports-page .sports-title { font-size: calc(28px * var(--gm-s)) !important; }
+  html[data-font-scale] .sports-page .sports-section-label { font-size: calc(17px * var(--gm-s)) !important; }
+  html[data-font-scale] .sports-page .sports-th,
+  html[data-font-scale] .sports-page .sports-td { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .sports-page .sports-card-title { font-size: calc(22px * var(--gm-s)) !important; }
+  html[data-font-scale] .sports-page .sports-card-meta { font-size: calc(11px * var(--gm-s)) !important; }
+  html[data-font-scale] .sports-page .sports-empty { font-size: calc(16px * var(--gm-s)) !important; }
+  html[data-font-scale] .games-page .games-kicker { font-size: calc(13px * var(--gm-s)) !important; }
+  html[data-font-scale] .games-page .games-title { font-size: calc(28px * var(--gm-s)) !important; }
+  html[data-font-scale] .games-page .games-tagline { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .games-page .games-section-label { font-size: calc(17px * var(--gm-s)) !important; }
+  html[data-font-scale] .games-page .games-name { font-size: calc(18px * var(--gm-s)) !important; }
+  html[data-font-scale] .games-page .games-desc { font-size: calc(13px * var(--gm-s)) !important; }
+  html[data-font-scale] .games-page .games-tag { font-size: calc(9.5px * var(--gm-s)) !important; }
+  html[data-font-scale] .games-page .games-icon { font-size: calc(26px * var(--gm-s)) !important; }
+  html[data-font-scale] .games-page .games-lb-name { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .games-page .games-lb-score { font-size: calc(13px * var(--gm-s)) !important; }
+  html[data-font-scale] .games-page .game-overlay-title { font-size: calc(20px * var(--gm-s)) !important; }
+  html[data-font-scale] .games-page .quiz-progress { font-size: calc(12px * var(--gm-s)) !important; }
+  html[data-font-scale] .games-page .quiz-q { font-size: calc(18px * var(--gm-s)) !important; }
+  html[data-font-scale] .games-page .quiz-opt { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .games-page .quiz-score-num { font-size: calc(44px * var(--gm-s)) !important; }
+  html[data-font-scale] .games-page .game-check-btn { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .games-page .sudoku-cell-input,
+  html[data-font-scale] .games-page .sudoku-cell { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .games-page .cross-cell-input { font-size: calc(13px * var(--gm-s)) !important; }
+  html[data-font-scale] .games-page .cross-num { font-size: calc(8px * var(--gm-s)) !important; }
+  html[data-font-scale] .games-page .cross-clue-title { font-size: calc(12.5px * var(--gm-s)) !important; }
+  html[data-font-scale] .games-page .cross-clue { font-size: calc(13px * var(--gm-s)) !important; }
+  html[data-font-scale] .games-page .ws-cell { font-size: calc(13px * var(--gm-s)) !important; }
+  html[data-font-scale] .games-page .ws-word-chip { font-size: calc(12.5px * var(--gm-s)) !important; }
+  html[data-font-scale] .beeps-page .beeps-title { font-size: calc(28px * var(--gm-s)) !important; }
+  html[data-font-scale] .beeps-page .beeps-subtitle { font-size: calc(14px * var(--gm-s)) !important; }
+  html[data-font-scale] .beeps-page .beeps-section-label { font-size: calc(17px * var(--gm-s)) !important; }
+  html[data-font-scale] .beeps-page .beep-ctrl-btn { font-size: calc(13px * var(--gm-s)) !important; }
+  html[data-font-scale] .beeps-page .beep-feed-badge { font-size: calc(10px * var(--gm-s)) !important; }
+  html[data-font-scale] .beeps-page .beep-feed-headline { font-size: calc(14.5px * var(--gm-s)) !important; }
+  html[data-font-scale] .beeps-page .beep-feed-time { font-size: calc(11.5px * var(--gm-s)) !important; }
+  html[data-font-scale] .beeps-page .beep-share-label { font-size: calc(13px * var(--gm-s)) !important; }
+  html[data-font-scale] .beeps-page .beep-badge { font-size: calc(11px * var(--gm-s)) !important; }
+  html[data-font-scale] .beeps-page .beep-headline { font-size: calc(24px * var(--gm-s)) !important; }
+  html[data-font-scale] .beeps-page .beep-time { font-size: calc(15px * var(--gm-s)) !important; }
+  html[data-font-scale] .beeps-page .beep-snippet { font-size: calc(17px * var(--gm-s)) !important; }
+}
