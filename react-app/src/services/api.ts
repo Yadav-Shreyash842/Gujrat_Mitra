@@ -11,6 +11,8 @@ import {
 
 const TIMEOUT_MS = 2500
 
+const API_BASE = (import.meta.env.VITE_API_URL as string | undefined)?.replace(/\/$/, '') ?? ''
+
 async function fetchJSON<T>(url: string): Promise<T> {
   const controller = new AbortController()
   const timer = setTimeout(() => controller.abort(), TIMEOUT_MS)
@@ -25,7 +27,7 @@ async function fetchJSON<T>(url: string): Promise<T> {
 
 export async function fetchArticleBySlug(slug: string): Promise<Article | undefined> {
   try {
-    const row = await fetchJSON<Article | null>(`/api/articles/slug/${encodeURIComponent(slug)}`)
+    const row = await fetchJSON<Article | null>(`${API_BASE}/api/articles/slug/${encodeURIComponent(slug)}`)
     if (row && row.slug) return row
   } catch {
     // fall through to local data
@@ -39,9 +41,9 @@ export async function fetchArticlesByCategory(slug: string): Promise<Article[]> 
     if (codes.length === 0) return []
     let rows: Article[]
     if (codes.length === 1) {
-      rows = await fetchJSON<Article[]>(`/api/articles?category=${encodeURIComponent(codes[0])}&limit=50`)
+      rows = await fetchJSON<Article[]>(`${API_BASE}/api/articles?category=${encodeURIComponent(codes[0])}&limit=50`)
     } else {
-      rows = await fetchJSON<Article[]>(`/api/articles?limit=100`)
+      rows = await fetchJSON<Article[]>(`${API_BASE}/api/articles?limit=100`)
       rows = rows.filter((article) => codes.includes(article.category))
     }
     if (Array.isArray(rows) && rows.length > 0) return rows
@@ -53,7 +55,7 @@ export async function fetchArticlesByCategory(slug: string): Promise<Article[]> 
 
 export async function fetchMarketInstruments(): Promise<MarketInstrument[]> {
   try {
-    const rows = await fetchJSON<MarketInstrument[]>(`/api/market`)
+    const rows = await fetchJSON<MarketInstrument[]>(`${API_BASE}/api/market`)
     if (Array.isArray(rows) && rows.length > 0) return rows
   } catch {
     // fall through to local data
@@ -63,7 +65,7 @@ export async function fetchMarketInstruments(): Promise<MarketInstrument[]> {
 
 export async function fetchPointsTable(): Promise<PointsTableRow[]> {
   try {
-    const rows = await fetchJSON<PointsTableRow[]>(`/api/sports/points-table`)
+    const rows = await fetchJSON<PointsTableRow[]>(`${API_BASE}/api/sports/points-table`)
     if (Array.isArray(rows) && rows.length > 0) return rows
   } catch {
     // fall through to local data
