@@ -49,6 +49,11 @@ function StoryCard({ title, image }: StoryCardProps) {
         relative
         overflow-hidden
         shrink-0
+        max-lg:border
+        max-lg:border-[#e5e5e5]
+        max-lg:rounded-[7px]
+        max-lg:bg-[#ffffff]
+        max-lg:shadow-[0_1px_4px_rgba(0,0,0,0.08)]
       "
     >
       {/* TEXT */}
@@ -76,6 +81,7 @@ function StoryCard({ title, image }: StoryCardProps) {
       <img
         src={image}
         alt={title}
+        loading="lazy"
         className="
           absolute
           top-0
@@ -107,6 +113,9 @@ export default function EntertainmentStory({ items }: { items?: SectionItem[] })
         max-lg:flex
         max-lg:flex-col
         max-lg:gap-[16px]
+        max-lg:border-t
+        max-lg:border-[#e8e8e8]
+        max-lg:pt-[16px]
       "
     >
 

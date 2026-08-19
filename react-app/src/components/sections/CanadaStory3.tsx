@@ -13,7 +13,7 @@ export default function CanadaStory3({ items }: { items?: SectionItem[] }) {
   const pick = (i: number) => list[i] ?? DEFAULT[i]
 
   return (
-    <div className="lg:top-[2557px] lg:left-[2px] w-full h-auto lg:h-[230px] bg-[url('/images/v47_484.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute">
+    <div className="lg:top-[2557px] lg:left-[2px] max-lg:border-t max-lg:border-[#e8e8e8] max-lg:pt-[16px] w-full h-auto lg:h-[230px] bg-[url('/images/v47_484.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute">
       <div className="relative top-[0px] left-[0px] max-lg:w-full w-[231px] h-auto lg:h-[230px] bg-[url('/images/v47_485.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
         <span className="lg:top-[150px] lg:left-[0px] max-lg:w-full w-[231px] text-[#000000] font-['Rasa'] font-normal text-[19px] lg:text-[22px] text-left lg:absolute block">
           <NewsLink>{pick(0).title}</NewsLink>

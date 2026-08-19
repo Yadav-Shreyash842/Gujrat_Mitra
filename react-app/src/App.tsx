@@ -80,14 +80,14 @@ function HomePage() {
     <Link to="/epaper" className="hidden lg:block no-underline">
       <EPaperWidget />
     </Link>
-    <div className="hidden lg:block">
+    <div className="block">
       <PlaceholderBox />
     </div>
     <CanadaStory />
     <Link to="/aapni-aaj" className="hidden lg:block no-underline">
       <AapniAajWidget />
     </Link>
-    <div className="hidden lg:block">
+    <div className="block">
       <DateBar />
     </div>
     <CricketStory />
@@ -102,7 +102,9 @@ function HomePage() {
     <Link to="/sports" className="hidden lg:block no-underline">
       <LiveCricketWidget />
     </Link>
-    <MobilePoll />
+    <div className="hidden lg:block">
+      <MobilePoll />
+    </div>
     <CanadaStory2 />
     <div className="hidden lg:block">
       <PollWidget2 />
@@ -120,11 +122,11 @@ function HomePage() {
     <EntertainmentBlock2 />
     <EducationSection />
     <AdSlot500 />
-    <div className="hidden lg:block">
+    <div className="block">
       <FashionWidget />
     </div>
     <RecipeSection />
-    <div className="hidden lg:block">
+    <div className="block">
       <CelebrityCard />
     </div>
     <WebStories />

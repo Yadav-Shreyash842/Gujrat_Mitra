@@ -1,7 +1,7 @@
 import NewsLink from '../NewsLink'
 export default function EntertainmentBlock() {
   return (
-    <div className="lg:top-[6408px] lg:left-[2px] max-lg:flex max-lg:flex-col max-lg:gap-[24px] w-full h-auto lg:h-[525px] bg-[url('/images/v47_386.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute">
+    <div className="lg:top-[6408px] lg:left-[2px] max-lg:flex max-lg:flex-col max-lg:gap-[24px] max-lg:border-t max-lg:border-[#e8e8e8] max-lg:pt-[16px] w-full h-auto lg:h-[525px] bg-[url('/images/v47_386.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute">
       <div className="lg:top-[0px] lg:left-[0px] max-lg:flex max-lg:flex-col max-lg:gap-[12px] w-full lg:w-[310px] h-auto lg:h-[525px] bg-[url('/images/v47_387.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute">
         <div className="lg:top-[44px] lg:left-[2px] w-full lg:w-[305px] max-lg:aspect-[305/171] max-lg:h-auto h-[171px] bg-[url('/images/v47_388.png')] bg-no-repeat bg-center bg-cover rounded-tl-[7px] rounded-tr-[7px] rounded-bl-[7px] rounded-br-[7px] overflow-hidden lg:absolute" />
         <span className="lg:top-[236px] lg:left-[0px] w-full lg:w-[310px] text-[#000000] font-['Rasa'] font-normal text-[19px] lg:text-[22px] text-left lg:absolute block">

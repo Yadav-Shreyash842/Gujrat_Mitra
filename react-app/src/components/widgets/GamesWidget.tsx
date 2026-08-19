@@ -1,6 +1,58 @@
 export default function GamesWidget() {
   return (
     <div id="games" className="lg:top-[2559px] lg:left-[1042px] w-full lg:w-[300px] h-auto lg:h-[309px] bg-[url('/images/v47_1125.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute">
+      {/* ===== MOBILE: stacked card ===== */}
+      <div className="max-lg:flex max-lg:flex-col max-lg:gap-[12px] max-lg:border max-lg:border-[#e5e5e5] max-lg:rounded-[8px] max-lg:bg-[#ffffff] max-lg:shadow-[0_1px_4px_rgba(0,0,0,0.08)] max-lg:p-[16px] lg:hidden">
+        <div className="flex items-center gap-[8px]">
+          <span className="text-[#ffad15] font-['Rasa'] font-bold text-[23px] lg:text-[28px]">
+            {"ગેમ્સ"}
+          </span>
+          <div className="flex items-center gap-[3px]">
+            <span className="w-[7px] h-[7px] rounded-full bg-[#ff0f0f]" />
+            <span className="w-[7px] h-[7px] rounded-full bg-[#ff7070]" />
+            <span className="w-[7px] h-[7px] rounded-full bg-[#ffacac]" />
+            <span className="w-[7px] h-[7px] rounded-full bg-[#f9dada]" />
+          </div>
+        </div>
+        <div className="flex flex-col gap-[10px]">
+          <div className="flex items-center gap-[12px] rounded-[8px] border border-[#e5e5e5] p-[10px]">
+            <div className="w-[50px] h-[50px] bg-[url('/images/v47_1139.png')] bg-no-repeat bg-center bg-cover rounded-[6px]" />
+            <div className="flex flex-col gap-[2px]">
+              <span className="text-[#000000] font-['Rasa'] font-normal text-[20px] lg:text-[24px]">
+                {"ક્રોસવર્ડ"}
+              </span>
+              <span className="text-[#00000080] font-['Rasa'] font-normal text-[16px] lg:text-[18px]">
+                {"કોયડા ઉકેલો જ્ઞાન વધારો"}
+              </span>
+            </div>
+          </div>
+          <div className="flex items-center gap-[12px] rounded-[8px] border border-[#e5e5e5] p-[10px]">
+            <div className="w-[50px] h-[50px] bg-[url('/images/v47_1147.png')] bg-no-repeat bg-center bg-cover rounded-[6px]" />
+            <div className="flex flex-col gap-[2px]">
+              <span className="text-[#000000] font-['Rasa'] font-normal text-[20px] lg:text-[24px]">
+                {"સુડોકું"}
+              </span>
+              <span className="text-[#00000080] font-['Rasa'] font-normal text-[16px] lg:text-[18px]">
+                {"કોયડા ઉકેલો જ્ઞાન વધારો"}
+              </span>
+            </div>
+          </div>
+          <div className="flex items-center gap-[12px] rounded-[8px] border border-[#e5e5e5] p-[10px]">
+            <div className="w-[50px] h-[50px] bg-[url('/images/v47_1143.png')] bg-no-repeat bg-center bg-cover rounded-[6px]" />
+            <div className="flex flex-col gap-[2px]">
+              <span className="text-[#000000] font-['Rasa'] font-normal text-[20px] lg:text-[24px]">
+                {"ક્વિઝ"}
+              </span>
+              <span className="text-[#00000080] font-['Rasa'] font-normal text-[16px] lg:text-[18px]">
+                {"કોયડા ઉકેલો જ્ઞાન વધારો"}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ===== DESKTOP: original ===== */}
+      <div className="max-lg:hidden">
       <div className="relative top-[0px] left-[0px] w-[114px] h-auto lg:h-[30px] bg-[url('/images/v47_1126.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
         <span className="lg:top-[0px] lg:left-[32px] w-[44px] text-[#ffad15] font-['Rasa'] font-bold text-[23px] lg:text-[28px] text-left lg:absolute block">
           {"ગેમ્સ"}
@@ -44,6 +96,7 @@ export default function GamesWidget() {
         </div>
         <div className="text-[#fff]" />
         <div className="text-[#fff]" />
+      </div>
       </div>
     </div>
   )

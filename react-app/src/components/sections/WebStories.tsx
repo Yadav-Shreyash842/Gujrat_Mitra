@@ -7,7 +7,7 @@ function videoHref(title: string): string {
 
 export default function WebStories() {
   return (
-    <div id="video" className="lg:top-[4968px] lg:left-[4px] w-full h-auto lg:h-[372px] bg-[url('/images/v47_244.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute">
+    <div id="video" className="lg:top-[4968px] lg:left-[4px] max-lg:border-t max-lg:border-[#e8e8e8] max-lg:pt-[16px] w-full h-auto lg:h-[372px] bg-[url('/images/v47_244.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute">
       <div className="lg:top-[0px] lg:left-[17px] w-[156px] h-auto lg:h-[30px] bg-[url('/images/v47_245.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute">
         <span className="lg:top-[0px] lg:left-[0px] w-[113px] text-[#ffad15] font-['Rasa'] font-bold text-[23px] lg:text-[28px] text-left lg:absolute block">
           {"વેબ વાર્તાઓ"}
@@ -19,7 +19,7 @@ export default function WebStories() {
           <div className="lg:top-[0px] lg:left-[27px] w-[7px] h-[9px] bg-[#f9dada] rounded-[50%] lg:absolute" />
         </div>
       </div>
-      <div className="lg:top-[47px] lg:left-[0px] max-lg:flex max-lg:gap-[12px] max-lg:overflow-x-auto max-lg:snap-x max-lg:snap-mandatory max-lg:scrollbar-width-none max-lg:[&::-webkit-scrollbar]:hidden w-full h-auto lg:h-[325px] bg-[url('/images/v47_252.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute">
+      <div className="lg:top-[47px] lg:left-[0px] max-lg:flex max-lg:gap-[12px] max-lg:overflow-x-auto max-lg:snap-x max-lg:snap-mandatory gm-rail w-full h-auto lg:h-[325px] bg-[url('/images/v47_252.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute">
         <div className="lg:top-[0px] lg:left-[0px] max-lg:w-[75vw] max-lg:shrink-0 max-lg:snap-start w-[184px] h-auto lg:h-[324px] bg-[url('/images/v47_253.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute">
           <Link
             to={videoHref('વરિયાળી ખાવાના ફાયદા')}

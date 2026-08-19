@@ -18,7 +18,7 @@ const rightHorizontalCards = [
 
 export default function HealthSection() {
   return (
-    <div className="lg:top-[5585px] lg:left-[2px] w-full h-auto lg:h-[319px] overflow-hidden lg:absolute">
+    <div className="lg:top-[5585px] lg:left-[2px] max-lg:border-t max-lg:border-[#e8e8e8] max-lg:pt-[16px] w-full h-auto lg:h-[319px] overflow-hidden lg:absolute">
 
       {/* ── Section heading ── */}
       <div className="lg:top-[1px] lg:left-[23px] flex items-center gap-[8px] lg:absolute">

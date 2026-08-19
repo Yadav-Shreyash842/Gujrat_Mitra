@@ -1,7 +1,7 @@
 import NewsLink from '../NewsLink'
 export default function EducationSection() {
   return (
-    <div className="lg:top-[4135px] lg:left-[2px] max-lg:flex max-lg:flex-col max-lg:gap-[16px] w-full h-auto lg:h-[323px] bg-[url('/images/v47_576.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute">
+    <div className="lg:top-[4135px] lg:left-[2px] max-lg:flex max-lg:flex-col max-lg:gap-[16px] max-lg:border-t max-lg:border-[#e8e8e8] max-lg:pt-[16px] w-full h-auto lg:h-[323px] bg-[url('/images/v47_576.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute">
       <div className="lg:top-[0px] lg:left-[18px] w-[115px] h-auto lg:h-[20px] bg-[url('/images/v47_577.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute">
         <div className="relative top-[0px] left-[0px] w-[115px] h-auto lg:h-[20px] bg-[url('/images/v47_578.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
           <div className="relative top-[0px] left-[0px] w-[115px] h-auto lg:h-[20px] bg-[url('/images/v47_579.png')] bg-no-repeat bg-center bg-cover overflow-hidden">

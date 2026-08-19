@@ -43,7 +43,7 @@ function ListRow({ image, text, imageWidth }: { image: string; text: string; ima
 
 export default function EntertainmentFeature() {
   return (
-    <div className="lg:top-[7732px] lg:left-[2px] max-lg:flex max-lg:flex-col max-lg:gap-[24px] w-full h-auto lg:h-[532px] lg:absolute">
+    <div className="lg:top-[7732px] lg:left-[2px] max-lg:flex max-lg:flex-col max-lg:gap-[24px] max-lg:border-t max-lg:border-[#e8e8e8] max-lg:pt-[16px] w-full h-auto lg:h-[532px] lg:absolute">
       <div className="lg:top-[0px] lg:left-[0px] max-lg:flex max-lg:flex-col max-lg:gap-[12px] w-full lg:w-[307px] h-auto lg:h-[524px] overflow-hidden lg:absolute">
         <div className="lg:top-[0px] lg:left-[14px] max-lg:order-first flex items-center gap-[8px] lg:absolute">
           <span className="text-[#ffad15] font-['Rasa'] font-bold text-[23px] lg:text-[28px] leading-none">મનોરંજન</span>

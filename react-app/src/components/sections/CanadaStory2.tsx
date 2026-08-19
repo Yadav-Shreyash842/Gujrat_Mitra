@@ -1,7 +1,7 @@
 import NewsLink from '../NewsLink'
 export default function CanadaStory2() {
   return (
-    <div className="lg:top-[1946px] lg:left-[2px] w-full h-auto lg:h-[560px] bg-[url('/images/v47_449.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute">
+    <div className="lg:top-[1946px] lg:left-[2px] max-lg:border-t max-lg:border-[#e8e8e8] max-lg:pt-[16px] w-full h-auto lg:h-[560px] bg-[url('/images/v47_449.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute">
       <div className="relative top-[0px] left-[0px] max-lg:w-full w-[231px] h-auto lg:h-[227px] bg-[url('/images/v47_450.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
         <span className="lg:top-[150px] lg:left-[0px] max-lg:w-full w-[231px] text-[#000000] font-['Rasa'] font-normal text-[19px] lg:text-[22px] text-left lg:absolute block">
           <NewsLink>{"કેનેડામાં ભારતીય મહિલા હિમાંશી ખુરાનાની હત્યા, પાર્ટનર મુખ્ય શંકાસ્પદ"}</NewsLink>

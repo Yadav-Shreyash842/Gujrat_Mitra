@@ -1,8 +1,8 @@
 export default function EPaperWidget({ className }: { className?: string }) {
   return (
-    <div id="epaper" className={`${className ?? 'relative lg:absolute lg:top-[250px] lg:left-[1040px]'} w-full lg:w-[301px] h-auto lg:h-[191px] bg-[url('/images/v47_929.png')] bg-no-repeat bg-center bg-cover overflow-hidden`}>
+    <div id="epaper" className={`${className ?? 'relative lg:absolute lg:top-[250px] lg:left-[1040px]'} w-full lg:w-[301px] h-auto lg:h-[191px] bg-[url('/images/v47_929.png')] bg-no-repeat bg-center bg-cover overflow-hidden max-lg:border-t max-lg:border-[#e8e8e8] max-lg:pt-[16px]`}>
       <div className="lg:top-[44px] lg:left-[0px] max-lg:relative w-full lg:w-[301px] h-auto lg:h-[146px] bg-[url('/images/v47_930.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute">
-        <div className="relative top-[0px] left-[0px] w-full lg:w-[301px] h-[146px] bg-[#ffffff] rounded-tl-[8px] rounded-tr-[8px] rounded-bl-[8px] rounded-br-[8px] shadow-[0px_0px_20px_rgba(0,_0,_0,_0.25)] overflow-hidden" />
+        <div className="relative top-[0px] left-[0px] w-full lg:w-[301px] h-[146px] bg-[#ffffff] rounded-tl-[8px] rounded-tr-[8px] rounded-bl-[8px] rounded-br-[8px] max-lg:border max-lg:border-[#e5e5e5] shadow-[0px_0px_20px_rgba(0,_0,_0,_0.25)] overflow-hidden" />
         <div className="lg:top-[17px] lg:left-[16px] max-lg:absolute max-lg:top-[17px] max-lg:left-[16px] max-lg:right-[16px] max-lg:w-auto max-lg:h-auto max-lg:aspect-[269/115] w-[269px] h-[115px] bg-[url('/images/v47_932.png')] bg-no-repeat bg-center bg-cover rounded-tl-[2px] rounded-tr-[2px] rounded-bl-[2px] rounded-br-[2px] overflow-hidden lg:absolute" />
       </div>
       <div className="relative top-[0px] left-[0px] w-[148px] h-auto lg:h-[29px] bg-[url('/images/v47_933.png')] bg-no-repeat bg-center bg-cover overflow-hidden">

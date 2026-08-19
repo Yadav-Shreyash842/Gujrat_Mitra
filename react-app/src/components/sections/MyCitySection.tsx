@@ -39,6 +39,9 @@ export default function MyCitySection() {
         max-lg:flex
         max-lg:flex-col
         max-lg:gap-[16px]
+        max-lg:border-t
+        max-lg:border-[#e8e8e8]
+        max-lg:pt-[16px]
       "
     >
 
@@ -146,6 +149,7 @@ export default function MyCitySection() {
         <img
           src="/images/v47_702.png"
           alt="રિતિક રોશન પિતરાઈ ભાઈ એશાનના લગ્નમાં"
+          loading="lazy"
           className="
             block
             w-full
@@ -220,6 +224,7 @@ export default function MyCitySection() {
           <img
             src={middleNews[0].image}
             alt={middleNews[0].title}
+            loading="lazy"
             className="
               block
               shrink-0
@@ -265,6 +270,7 @@ export default function MyCitySection() {
           <img
             src={middleNews[1].image}
             alt={middleNews[1].title}
+            loading="lazy"
             className="
               block
               shrink-0
@@ -310,6 +316,7 @@ export default function MyCitySection() {
           <img
             src={middleNews[2].image}
             alt={middleNews[2].title}
+            loading="lazy"
             className="
               block
               shrink-0

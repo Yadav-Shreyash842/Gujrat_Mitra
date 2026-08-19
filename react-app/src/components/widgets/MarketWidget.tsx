@@ -1,8 +1,8 @@
 export default function MarketWidget({ className }: { className?: string }) {
   return (
-    <div className={`${className ?? 'relative lg:absolute lg:top-[1089px] lg:left-[1040px]'} w-full lg:w-[300px] h-auto lg:h-[254px] bg-[url('/images/v47_971.png')] bg-no-repeat bg-center bg-cover overflow-hidden`}>
-      <div className="lg:top-[0px] lg:left-[1px] w-[193px] h-auto lg:h-[29px] bg-[url('/images/v47_972.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute">
-        <span className="lg:top-[0px] lg:left-[40px] w-[111px] text-[#ffad15] font-['Rasa'] font-bold text-[23px] lg:text-[28px] text-center lg:absolute block">
+    <div className={`${className ?? 'relative lg:absolute lg:top-[1089px] lg:left-[1040px]'} w-full lg:w-[300px] h-auto lg:h-[254px] bg-[url('/images/v47_971.png')] bg-no-repeat bg-center bg-cover overflow-hidden max-lg:border-t max-lg:border-[#e8e8e8] max-lg:pt-[16px]`}>
+      <div className="lg:top-[0px] lg:left-[1px] max-lg:flex max-lg:items-center max-lg:min-h-[40px] max-lg:pl-[40px] w-[193px] h-auto lg:h-[29px] bg-[url('/images/v47_972.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute">
+        <span className="lg:top-[0px] lg:left-[40px] max-lg:pl-[0px] w-[111px] text-[#ffad15] font-['Rasa'] font-bold text-[23px] lg:text-[28px] text-center lg:absolute block">
           {"વેપાર બજાર"}
         </span>
         <div className="lg:top-[14px] lg:left-[157px] w-[36px] h-auto lg:h-[9px] bg-[url('/images/v47_974.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute">

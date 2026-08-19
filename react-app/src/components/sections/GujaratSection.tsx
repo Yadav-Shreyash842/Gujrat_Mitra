@@ -39,6 +39,9 @@ export default function GujaratSection() {
         max-lg:flex
         max-lg:flex-col
         max-lg:gap-[16px]
+        max-lg:border-t
+        max-lg:border-[#e8e8e8]
+        max-lg:pt-[16px]
       "
     >
       {/* =====================================================
@@ -95,6 +98,7 @@ export default function GujaratSection() {
         <img
           src="/images/v47_525.png"
           alt="રિતિક રોશન પિતરાઈ ભાઈ એશાનના લગ્નમાં"
+          loading="lazy"
           className="
             block
             w-full
@@ -167,6 +171,7 @@ export default function GujaratSection() {
           <img
             src="/images/v47_515.png"
             alt={middleNews[0].title}
+            loading="lazy"
             className="
               block
               shrink-0
@@ -211,6 +216,7 @@ export default function GujaratSection() {
           <img
             src="/images/v47_519.png"
             alt={middleNews[1].title}
+            loading="lazy"
             className="
               block
               shrink-0
@@ -255,6 +261,7 @@ export default function GujaratSection() {
           <img
             src="/images/v47_522.png"
             alt={middleNews[2].title}
+            loading="lazy"
             className="
               block
               shrink-0

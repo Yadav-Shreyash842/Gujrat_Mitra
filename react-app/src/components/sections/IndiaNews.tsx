@@ -80,7 +80,7 @@ function NewsColumn({ title, items, className = '' }: ColumnProps) {
 export default function IndiaNews() {
   return (
     <div className="lg:top-[5955px] lg:left-[2px] w-full h-auto lg:h-[403px] lg:absolute">
-      <div className="flex gap-[16px] overflow-x-auto pb-[6px] snap-x snap-mandatory scrollbar-width-none [&::-webkit-scrollbar]:hidden lg:grid lg:grid-cols-[312px_312px_311px_312px] lg:gap-[31px] lg:overflow-visible lg:pb-0">
+      <div className="flex gap-[16px] overflow-x-auto pb-[6px] snap-x snap-mandatory gm-rail lg:grid lg:grid-cols-[312px_312px_311px_312px] lg:gap-[31px] lg:overflow-visible lg:pb-0">
         <NewsColumn title="ભારત સમાચાર" items={indiaItems} />
         <NewsColumn title="ઓફબીટ" items={offbeatItems} />
         <NewsColumn title="વિજ્ઞાન" items={scienceItems} className="lg:w-[311px]" />

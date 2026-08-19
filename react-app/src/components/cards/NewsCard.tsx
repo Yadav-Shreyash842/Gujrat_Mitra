@@ -23,6 +23,7 @@ export default function NewsCard({
         <img
           src={image}
           alt={imageAlt}
+          loading="lazy"
           className="w-full aspect-[16/9] object-cover rounded-[7px]"
         />
         <span className="mt-[14px] block text-[#000000] dark:text-[#f2f2f2] font-['Rasa'] font-bold text-[26px] lg:text-[34px] leading-[1.25]">
@@ -43,6 +44,7 @@ export default function NewsCard({
         <img
           src={image}
           alt={imageAlt}
+          loading="lazy"
           className="w-full aspect-[16/9] object-cover rounded-[7px]"
         />
         <span className="category-page category-card-title block mt-[10px] text-[#000000] dark:text-[#e8e8e8] font-['Rasa'] font-normal text-[19px] lg:text-[22px] leading-[1.3]">
@@ -63,6 +65,7 @@ export default function NewsCard({
         <img
           src={image}
           alt={imageAlt}
+          loading="lazy"
           className="w-[96px] h-[64px] object-cover rounded-[7px] shrink-0 lg:w-[107px] lg:h-[75px]"
         />
         <span className="min-w-0">

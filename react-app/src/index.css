@@ -53,6 +53,31 @@ body {
   .mobile-cat-nav::-webkit-scrollbar {
     display: none;
   }
+
+  /* Mobile horizontal news rails: very light 2-3px scrollbar */
+  .gm-rail {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #d4d4d4 transparent;
+  }
+
+  .gm-rail::-webkit-scrollbar {
+    height: 3px;
+    width: 3px;
+  }
+
+  .gm-rail::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .gm-rail::-webkit-scrollbar-thumb {
+    background: #d4d4d4;
+    border-radius: 9999px;
+  }
+
+  .gm-rail::-webkit-scrollbar-thumb:hover {
+    background: #bfbfbf;
+  }
 }
 
 /* --- Font scale multiplier (used by desktop overrides) --- */

@@ -1,7 +1,7 @@
 import NewsLink from '../NewsLink'
 export default function EntertainmentBlock2() {
   return (
-    <div className="lg:top-[3767px] lg:left-[2px] w-full h-auto lg:h-[318px] bg-[url('/images/v47_531.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute max-lg:flex max-lg:flex-col max-lg:gap-[16px]">
+    <div className="lg:top-[3767px] lg:left-[2px] w-full h-auto lg:h-[318px] bg-[url('/images/v47_531.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute max-lg:flex max-lg:flex-col max-lg:gap-[16px] max-lg:border-t max-lg:border-[#e8e8e8] max-lg:pt-[16px]">
       <div className="relative lg:absolute lg:top-[0px] lg:left-[18px] w-full lg:w-[133px] h-auto lg:h-[27px] bg-[url('/images/v47_532.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
         <div className="relative top-[0px] left-[0px] w-[133px] h-auto lg:h-[27px] bg-[url('/images/v47_533.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
           <div className="relative top-[0px] left-[0px] w-[133px] h-auto lg:h-[27px] bg-[url('/images/v47_534.png')] bg-no-repeat bg-center bg-cover overflow-hidden">

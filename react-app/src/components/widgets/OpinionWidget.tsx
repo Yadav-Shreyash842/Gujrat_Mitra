@@ -20,7 +20,7 @@ export default function OpinionWidget({ className }: { className?: string }) {
       </div>
       <div className="lg:top-[44px] lg:left-[1px] w-full lg:w-[300px] h-auto lg:h-[386px] bg-[url('/images/v47_952.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute">
         <div className="relative top-[0px] left-[0px] max-lg:relative max-lg:grid max-lg:grid-cols-[59px_1fr] max-lg:items-center max-lg:gap-[12px] w-full lg:w-[300px] h-auto lg:h-[108px] bg-[url('/images/v47_953.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
-          <div className="relative top-[0px] left-[0px] max-lg:absolute max-lg:inset-0 w-full lg:w-[300px] h-[108px] bg-[#ffffff] rounded-tl-[8px] rounded-tr-[8px] rounded-bl-[8px] rounded-br-[8px] shadow-[0px_0px_20px_rgba(0,_0,_0,_0.25)] overflow-hidden" />
+          <div className="relative top-[0px] left-[0px] max-lg:absolute max-lg:inset-0 max-lg:rounded-[8px] max-lg:border max-lg:border-[#e5e5e5] max-lg:shadow-[0_1px_4px_rgba(0,0,0,0.08)] w-full lg:w-[300px] h-[108px] bg-[#ffffff] rounded-tl-[8px] rounded-tr-[8px] rounded-bl-[8px] rounded-br-[8px] shadow-[0px_0px_20px_rgba(0,_0,_0,_0.25)] overflow-hidden" />
           <div className="lg:top-[14px] lg:left-[17px] max-lg:col-start-1 max-lg:row-start-1 max-lg:row-span-2 w-[59px] h-[59px] bg-[url('/images/v47_955.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute" />
           <span className="lg:top-[14px] lg:left-[89px] max-lg:col-start-2 max-lg:row-start-1 max-lg:w-auto max-lg:min-w-0 w-[192px] text-[#000000] font-['Rasa'] font-normal text-[18px] lg:text-[20px] text-left lg:absolute block">
             <NewsLink>{"બ્રિટિશ નૌકાદળનું F-35 વિમાન ૧૫ દિવસથી તિરુવનંતપુરમ એરપોર્ટ પર કેમ પડ્યું છે?"}</NewsLink>
@@ -33,7 +33,7 @@ export default function OpinionWidget({ className }: { className?: string }) {
           </span>
         </div>
         <div className="lg:top-[138px] lg:left-[0px] w-full lg:w-[300px] h-auto lg:h-[108px] bg-[url('/images/v47_959.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute">
-          <div className="relative top-[0px] left-[0px] max-lg:absolute max-lg:inset-0 w-full lg:w-[300px] h-[108px] bg-[#ffffff] rounded-tl-[8px] rounded-tr-[8px] rounded-bl-[8px] rounded-br-[8px] shadow-[0px_0px_20px_rgba(0,_0,_0,_0.25)] overflow-hidden" />
+          <div className="relative top-[0px] left-[0px] max-lg:absolute max-lg:inset-0 max-lg:rounded-[8px] max-lg:border max-lg:border-[#e5e5e5] max-lg:shadow-[0_1px_4px_rgba(0,0,0,0.08)] w-full lg:w-[300px] h-[108px] bg-[#ffffff] rounded-tl-[8px] rounded-tr-[8px] rounded-bl-[8px] rounded-br-[8px] shadow-[0px_0px_20px_rgba(0,_0,_0,_0.25)] overflow-hidden" />
           <div className="lg:top-[14px] lg:left-[17px] max-lg:col-start-1 max-lg:row-start-1 max-lg:row-span-2 w-[59px] h-[59px] bg-[url('/images/v47_961.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute" />
           <span className="lg:top-[14px] lg:left-[89px] max-lg:col-start-2 max-lg:row-start-1 max-lg:w-auto max-lg:min-w-0 w-[192px] text-[#000000] font-['Rasa'] font-normal text-[18px] lg:text-[20px] text-left lg:absolute block">
             <NewsLink>{"બ્રિટિશ નૌકાદળનું F-35 વિમાન ૧૫ દિવસથી તિરુવનંતપુરમ એરપોર્ટ પર કેમ પડ્યું છે?"}</NewsLink>
@@ -46,7 +46,7 @@ export default function OpinionWidget({ className }: { className?: string }) {
           </span>
         </div>
         <div className="lg:top-[277px] lg:left-[0px] w-full lg:w-[300px] h-auto lg:h-[108px] bg-[url('/images/v47_965.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute">
-          <div className="relative top-[0px] left-[0px] max-lg:absolute max-lg:inset-0 w-full lg:w-[300px] h-[108px] bg-[#ffffff] rounded-tl-[8px] rounded-tr-[8px] rounded-bl-[8px] rounded-br-[8px] shadow-[0px_0px_20px_rgba(0,_0,_0,_0.25)] overflow-hidden" />
+          <div className="relative top-[0px] left-[0px] max-lg:absolute max-lg:inset-0 max-lg:rounded-[8px] max-lg:border max-lg:border-[#e5e5e5] max-lg:shadow-[0_1px_4px_rgba(0,0,0,0.08)] w-full lg:w-[300px] h-[108px] bg-[#ffffff] rounded-tl-[8px] rounded-tr-[8px] rounded-bl-[8px] rounded-br-[8px] shadow-[0px_0px_20px_rgba(0,_0,_0,_0.25)] overflow-hidden" />
           <div className="lg:top-[14px] lg:left-[17px] max-lg:col-start-1 max-lg:row-start-1 max-lg:row-span-2 w-[59px] h-[59px] bg-[url('/images/v47_967.png')] bg-no-repeat bg-center bg-cover overflow-hidden lg:absolute" />
           <span className="lg:top-[14px] lg:left-[89px] max-lg:col-start-2 max-lg:row-start-1 max-lg:w-auto max-lg:min-w-0 w-[192px] text-[#000000] font-['Rasa'] font-normal text-[18px] lg:text-[20px] text-left lg:absolute block">
             <NewsLink>{"બ્રિટિશ નૌકાદળનું F-35 વિમાન ૧૫ દિવસથી તિરુવનંતપુરમ એરપોર્ટ પર કેમ પડ્યું છે?"}</NewsLink>
